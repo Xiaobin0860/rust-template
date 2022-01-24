@@ -18,9 +18,9 @@ macros = { path = "../macros" }
 
 [dev-dependencies]
 anyhow = "1.0"
-serde_json = "1.0"
 
 fixtures = { path = "../fixtures" }
 
 [build-dependencies]
-prost-serde = "0.3"
+prost-build-config = "0.4"
+serde_yaml = "0.8"
