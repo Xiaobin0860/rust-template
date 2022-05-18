@@ -14,7 +14,7 @@ message AppError {
   string message = 2;
 }
 
-// error code
+// Application error code
 enum AppErrorCode {
   Ok = 0;
   UnsupportedApi = 1;

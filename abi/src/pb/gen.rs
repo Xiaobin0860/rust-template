@@ -12,7 +12,7 @@ pub struct AppError {
     #[prost(string, tag = "2")]
     pub message: ::prost::alloc::string::String,
 }
-/// error code
+/// Application error code
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(rename_all = "lowercase")]
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Hash, PartialOrd, Ord, ::prost::Enumeration)]
@@ -37,7 +37,7 @@ pub struct RequestPing {
     #[prost(string, tag = "1")]
     pub msg: ::prost::alloc::string::String,
 }
-/// pong
+/// responnse pong
 #[derive(serde::Serialize, serde::Deserialize)]
 #[serde(default)]
 #[derive(Clone, PartialEq, ::prost::Message)]

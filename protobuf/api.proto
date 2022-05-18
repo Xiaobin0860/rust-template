@@ -12,7 +12,7 @@ import "error.proto";
 // request ping
 message RequestPing { string msg = 1; }
 
-// pong
+// responnse pong
 message ResponsePong {
   AppError error = 1;
   Pong data = 2;

@@ -3,10 +3,10 @@ CARGO=cargo
 
 BENCHES=
 
-all: rebuild-protos
+all: build
 
-rebuild-protos:
-	@$(CARGO) fmt && BUILD_PROTO=1 $(CARGO) build
+build:
+	@$(CARGO) fmt && $(CARGO) build
 
 fmt:
 	@echo "Running cargo fmt..."
